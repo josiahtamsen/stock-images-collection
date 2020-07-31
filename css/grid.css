@@ -42,10 +42,6 @@ hr {
 }
 
 .image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;
-  display: grid;
 }
 
 .grid-image {
@@ -67,11 +63,6 @@ hr {
   flex-wrap: wrap;
 }
 
-@media (max-width: 500px) {
-  .icon-bar {
-    height: 500px;
-  }
-}
 .icon-bar > img {
   height: 40px;
   margin: 0 15px;
