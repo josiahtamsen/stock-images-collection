@@ -71,9 +71,9 @@ hr {
 .icon-bar {
   height: 200px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
-  flex-wrap: wrap;
 }
 
 .icon-bar > img {
