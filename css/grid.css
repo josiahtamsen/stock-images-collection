@@ -3,7 +3,6 @@
 body {
   font-family: "Roboto-Condensed", sans-serif;
   background-color: rgb(251, 238, 228);
-  width: 100vw;
 }
 
 h2 {
@@ -42,12 +41,23 @@ hr {
 }
 
 .image-grid {
+  /* setting up grid container */
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid black;
+  height: 5000px; /* purposely large in order to better demonstrate properties */
+  width: 1300px; /* increase width if the grid is too small! */
+
+  /* grid properties */
 }
 
 .grid-image {
-  height: 300px;
-  width: 100%;
+  max-width: 280px;
+  max-height: 200px;
   object-fit: cover;
+}
+
+.image-pan {
 }
 
 /* footer layout */

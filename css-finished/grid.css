@@ -3,7 +3,6 @@
 body {
   font-family: "Roboto-Condensed", sans-serif;
   background-color: rgb(251, 238, 228);
-  width: 100vw;
 }
 
 h2 {
@@ -42,15 +41,38 @@ hr {
 }
 
 .image-grid {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px; */
+
+  /* setting up grid container */
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid black;
+  width: 1300px; /* increase width if the grid is too small! */
+
+  /* grid properties */
+  display: grid;
+  grid-template-columns: 280px 280px 280px 280px; /* feel free to change sizes as well */
+  /* grid-template-rows: repeat(10, 200px); */
   grid-gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
+  /* align-content: center; */
+  justify-content: center;
+  grid-auto-rows: 200px;
 }
 
 .grid-image {
-  height: 300px;
-  width: 100%;
+  /* height: 300px;
+  width: 100%; */
+  max-width: 280px;
+  max-height: 200px;
   object-fit: cover;
+}
+
+.image-pan {
+  grid-area: 7 / 1 / 8 / span 4;
 }
 
 /* footer layout */
