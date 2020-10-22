@@ -48,25 +48,21 @@ hr {
   /* setting up grid container */
   margin: 0 auto;
   padding: 20px;
-  border: 2px solid black;
   width: 1300px; /* increase width if the grid is too small! */
 
   /* grid properties */
   display: grid;
   grid-template-columns: 280px 280px 280px 280px; /* feel free to change sizes as well */
-  /* grid-template-rows: repeat(10, 200px); */
+  grid-auto-rows: 200px;
   grid-gap: 20px;
   justify-items: stretch;
   align-items: stretch;
-  /* align-content: center; */
+  align-content: center;
   justify-content: center;
-  grid-auto-rows: 200px;
 }
 
 .grid-image {
-  /* height: 300px;
-  width: 100%; */
-  max-width: 280px;
+  /* max-width: 280px; */
   max-height: 200px;
   object-fit: cover;
 }
